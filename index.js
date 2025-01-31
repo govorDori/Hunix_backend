@@ -12,7 +12,7 @@ app.delete('', async(req,resp)=>{
 	try {
 		const {id} = req.params
 		removeFromCloud(id)
-		resp.json({msg:"Sikeres törlés!"})
+		resp.json({msg:"Sikeres törlés! "})
 	} catch (error) {
 		console.log(error);
 		
