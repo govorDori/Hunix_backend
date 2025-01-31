@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import { removeFromCloud } from "./cloudinaryConfig"
+import { removeFromCloud } from "./cloudinaryConfig.js"
 
 const app = express()
 app.use(cors())
