@@ -1,6 +1,6 @@
 import express from "express"
 import cors from "cors"
-import { removeFromCloud } from "./cloudinaryConfig"
+import { removeFromCloud } from "./cloudinaryConfig.js"
 
 const app = express()
 app.use(cors())
@@ -12,7 +12,7 @@ app.delete('', async(req,resp)=>{
 	try {
 		const {id} = req.params
 		removeFromCloud(id)
-		resp.json({msg:"Sikeres törlés!"})
+		resp.json({msg:"Sikeres törlés! "})
 	} catch (error) {
 		console.log(error);
 		
