@@ -27,7 +27,7 @@ const app = express()
 app.use(cors())
 app.use(express.json())
 
-app.get('/', (req, resp) => resp.send('Hunix'));
+//app.get('/', (req, resp) => resp.send('Hunix'));
 
 app.delete('/api/delete-image', async (req, res) => {
   try {
